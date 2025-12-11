@@ -5,11 +5,9 @@ This repository contains all those projects  that I have created with front end 
 - [About](#about)
 - [Features](#features)
 - [Screenshots](#screenshots)
-- [Installation](#installation)
 - [Usage](#usage)
 - [Tech Stack](#tech-stack)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## About
 
@@ -22,3 +20,6 @@ The features are as follows:
  - Timer
  - WPM
  - Accuracy
+
+##Sceenshots
+
