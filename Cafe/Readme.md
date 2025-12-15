@@ -10,3 +10,5 @@ Check out the website over here:
 <a href="https://beanora-vijay.netlify.app/" target="_blank">Check out my website</a>
 
 ## Screenshots
+<div align="center">
+  <img src="
