@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1 class="heading">Guess the Movie Name</h1>
+    <div class="aboutBTN">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 -960 960 960"
+        class="icon"
+      >
+        <path
+          d="M440-280h80v-240h-80v240Zm40-320q17 0 28.5-11.5T520-640q0-17-11.5-28.5T480-680q-17 0-28.5 11.5T440-640q0 17 11.5 28.5T480-600Zm0 520q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
+        />
+      </svg>
+    </div>
+    <div class="aboutPanel">
+      <p class="aboutContent">How to Play?</p>
+      <p class="aboutContent">
+        <a target="_blank" href="https://vijay-dev-portfolio.netlify.app/"
+          >Visit my Portfolio</a
+        >
+      </p>
+      <p class="aboutContent aboutDevButton">About Developer</p>
+    </div>
+
+    <div class="aboutDeveloper-panel hidden">
+      <div class="aboutDev">
+        <div class="tag">
+          <h2>Developed by V. Vijay</h2>
+          <h5>Front-End Developer & Student</h5>
+        </div>
+        <div class="devImg">
+          <img src="me.jpg" alt="Developer" />
+        </div>
+        <p>
+          Hi, I’m Vijay—a curious learner and front-end enthusiast who loves
+          turning ideas into clean, responsive web pages. I build with
+          JavaScript, CSS, and HTML, focusing on smooth user experiences and
+          simple, readable code.
+        </p>
+      </div>
+    </div>
+
+    <h2 class="word hidden"></h2>
+    <div class="controls">
+      <button class="btn newGame">Play</button>
+      <div class="chance">
+        <p class="chances">Chances Left</p>
+        <span class="score">10</span>
+      </div>
+    </div>
+    <div class="keys">
+      <key class="key">Q</key>
+      <key class="key">W</key>
+      <key class="key">E</key>
+      <key class="key">R</key>
+      <key class="key">T</key>
+      <key class="key">Y</key>
+      <key class="key">U</key>
+      <key class="key">I</key>
+      <key class="key">O</key>
+      <key class="key">P</key>
+      <key class="key">A</key>
+      <key class="key">S</key>
+      <key class="key">D</key>
+      <key class="key">F</key>
+      <key class="key">G</key>
+      <key class="key">H</key>
+      <key class="key">J</key>
+      <key class="key">K</key>
+      <key class="key">L</key>
+      <key class="key">Z</key>
+      <key class="key">X</key>
+      <key class="key">C</key>
+      <key class="key">V</key>
+      <key class="key">B</key>
+      <key class="key">N</key>
+      <key class="key">M</key>
+    </div>
+    <div class="victoryPanel">
+      <div class="victory hidden">
+        <h1>You Won!!!</h1>
+        <p class="close">&times;</p>
+        <button class="btn tryAgain">Play Again</button>
+      </div>
+    </div>
+    <div class="losePanel">
+      <div class="lose hidden">
+        <h1>You Lose!!!</h1>
+        <p class="closeLose">&times;</p>
+        <button class="btn tryAgain">Try Again</button>
+      </div>
+    </div>
+    <div class="overlay hidden"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
