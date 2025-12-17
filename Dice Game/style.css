@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rajdhani", sans-serif;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to bottom right, #38d9a9, #c3fae8);
+  color: #343a40;
+  position: relative;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.players {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.playerUI {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.player {
+  width: 35rem;
+  height: 65vh;
+  /* box-shadow: 50px rgba(0, 0, 0, 0.5); */
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all 0.5s ease;
+}
+
+.player2 {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.active {
+  background-color: rgba(207, 236, 227, 0.7);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
+}
+
+.inactive {
+  background-color: rgba(207, 236, 227, 0.1);
+}
+
+.player h2 {
+  font-size: 64px;
+  color: #087f5b;
+}
+
+.score {
+  color: #0ca678;
+  font-weight: 500;
+  font-size: 60px;
+}
+
+.currentScore {
+  display: flex;
+  flex-direction: column;
+  background-color: #0ca678;
+  padding: 0.8rem 3.2rem;
+  align-items: center;
+  border-radius: 20px;
+  color: #e6fcf5;
+}
+
+.current {
+  font-size: 32px;
+}
+
+.currentValue {
+  font-size: 56px;
+}
+
+.btn {
+  padding: 0.4rem 1.6rem;
+  border-radius: 20px;
+  border: none;
+  font-size: 20px;
+  background-color: rgba(230, 252, 245, 0.8);
+  transition: transform 0.1s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  background-color: #38d9a9;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  color: #343a40;
+}
+
+.dice {
+  width: 85px;
+  position: absolute;
+  top: 100px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+  transition: transform 0.1s ease;
+}
+
+.dice:hover {
+  transform: scale(1.04);
+}
+
+.newGame {
+  position: absolute;
+  top: 25px;
+}
+
+.hold {
+  position: absolute;
+  bottom: 15px;
+}
+
+.roll {
+  position: absolute;
+  bottom: 75px;
+}
+
+.victoryPanel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.victory {
+  position: relative;
+  z-index: 1001;
+  background-color: #e6fcf5;
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+  width: 20rem;
+  height: 10rem;
+}
+
+.text {
+  transform: translateY(-1.35rem);
+}
+
+.playAgain {
+  font-size: 14px;
+  position: absolute;
+  bottom: 15px;
+}
+
+.overlay {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backdrop-filter: blur(3px);
+}
+
+.aboutBtn {
+  z-index: 1001;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 26px;
+  transition: all 0.1s ease;
+}
+
+.aboutBtn:hover,
+.aboutBtn:focus,
+.aboutBtn:active {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.about-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutPanel {
+  z-index: 1001;
+  position: absolute;
+  /* top: 23%;
+  left: 23%; */
+  width: 50rem;
+  height: 25rem;
+  background-color: white;
+  display: flex;
+  text-align: justify;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 15px;
+  transform: scale(0.8);
+  transition: transform 0.3s ease;
+}
+
+.aboutPanel h2 {
+  font-size: 42px;
+}
+
+.aboutPanel p {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.aboutImg {
+  width: 150px;
+  height: 150px;
+}
+
+.content {
+  width: 20rem;
+}
+
+.aboutImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+  border-radius: 50%;
+}
+
+.close {
+  position: absolute;
+  font-size: 64px;
+  top: 1px;
+  right: 20px;
+  transition: transform 0.1s ease;
+}
+.close:hover,
+.close:focus,
+.close:active {
+  cursor: pointer;
+  transform: scale(1.1);
+}

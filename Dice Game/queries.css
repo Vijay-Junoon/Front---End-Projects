@@ -1,0 +1,189 @@
+@media (max-width: 1270px) {
+  .player {
+    width: 25rem;
+  }
+  .btn {
+    font-size: 16px;
+    padding: 0.4rem 1rem;
+  }
+}
+
+@media (max-width: 930px) {
+  .player {
+    width: 20rem;
+  }
+  .newGame {
+    top: 5px;
+  }
+}
+
+@media (max-width: 740px) {
+  .player {
+    width: 17rem;
+  }
+  .aboutPanel {
+    width: 40rem;
+    height: 20rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .playerUI {
+    flex-direction: column;
+  }
+  .player {
+    width: 25rem;
+    height: 15rem;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  .player2 {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 20px;
+  }
+  .player h2 {
+    font-size: 48px;
+    color: #087f5b;
+  }
+  .currentScore {
+    padding: 0.2rem 1.6rem;
+  }
+  .current {
+    font-size: 24px;
+  }
+
+  .currentValue {
+    font-size: 36px;
+  }
+  .dice {
+    top: 198px;
+    left: 0px;
+    transform: translateX(-2rem);
+  }
+  .newGame {
+    top: -42px;
+  }
+
+  .hold {
+    top: -42px;
+    left: 10px;
+    height: 32px;
+    width: 6rem;
+  }
+
+  .roll {
+    top: -42px;
+    right: 8px;
+    height: 32px;
+  }
+  .aboutPanel {
+    width: 30rem;
+    height: 40rem;
+    flex-direction: column;
+  }
+  .aboutPanel h2 {
+    font-size: 42px;
+  }
+
+  .aboutPanel p {
+    font-size: 20px;
+  }
+
+  .aboutImg {
+    width: 150px;
+    height: 150px;
+  }
+
+  .content {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .player {
+    width: 20rem;
+    height: 12rem;
+  }
+  .player h2 {
+    font-size: 32px;
+    color: #087f5b;
+  }
+  .currentScore {
+    padding: 0.2rem 1.6rem;
+  }
+  .current {
+    font-size: 18px;
+  }
+
+  .currentValue {
+    font-size: 28px;
+  }
+  .dice {
+    width: 65px;
+    top: 158px;
+  }
+  .newGame {
+    top: -42px;
+  }
+
+  .hold {
+    left: 0px;
+    height: 32px;
+  }
+
+  .roll {
+    right: 0px;
+    bottom: 40px;
+    height: 32px;
+  }
+}
+
+@media (max-width: 500px) {
+  .aboutPanel {
+    width: 24rem;
+    height: 40rem;
+    flex-direction: column;
+  }
+}
+@media (max-width: 420px) {
+  .player {
+    width: 16rem;
+    height: 12rem;
+  }
+  .player h2 {
+    font-size: 26px;
+    color: #087f5b;
+  }
+  .currentScore {
+    padding: 0.2rem 1.2rem;
+    border-radius: 10px;
+  }
+  .current {
+    font-size: 14px;
+  }
+
+  .currentValue {
+    font-size: 26px;
+  }
+
+  .newGame {
+    top: -85px;
+  }
+
+  .hold {
+    left: 25px;
+    height: 32px;
+  }
+
+  .roll {
+    right: 25px;
+    bottom: 40px;
+    height: 32px;
+  }
+  .victory {
+    width: 18rem;
+    height: 10rem;
+  }
+}

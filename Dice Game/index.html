@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice Game</title>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
+  </head>
+  <body>
+    <img src="about.png" alt="About" class="aboutBtn" />
+    <div class="about-section hidden">
+      <div class="aboutPanel">
+        <span class="close">&times;</span>
+        <div class="aboutImg">
+          <img src="me.jpg" alt="Author Image" />
+          <p>Developed by Vijay</p>
+        </div>
+        <div class="content">
+          <h2>About This Game</h2>
+          <p>
+            Welcome to Dice Duel – a fun, fast-paced two-player dice game! Roll
+            the dice, take turns, and see who gets the luckiest rolls. The first
+            player to reach 50 points claims victory!
+          </p>
+          <p><b>Strategy meets luck – may the dice be in your favor!</b></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="players">
+      <div class="playerUI">
+        <button class="btn newGame">New Game</button>
+        <img src="1.png" alt="dice rolled!" class="dice" />
+        <button class="btn roll">Roll Dice</button>
+        <button class="btn hold">Hold</button>
+        <div class="player player1 active">
+          <h2>PLAYER 1</h2>
+          <p class="score">0</p>
+          <div class="currentScore">
+            <p class="current">CURRENT</p>
+            <span class="currentValue">0</span>
+          </div>
+        </div>
+        <div class="player player2">
+          <h2>PLAYER 2</h2>
+          <p class="score">0</p>
+          <div class="currentScore">
+            <p class="current">CURRENT</p>
+            <span class="currentValue">0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="victoryPanel hidden">
+      <div class="victory">
+        <div class="text">
+          <h2>Player-<span class="playerID">1</span> wins!</h2>
+          <p>The dice gods are pleased!</p>
+        </div>
+        <button class="btn playAgain">Roll Again!</button>
+      </div>
+    </div>
+    <div class="overlay hidden"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
