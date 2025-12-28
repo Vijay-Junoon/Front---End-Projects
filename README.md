@@ -23,3 +23,13 @@ The features are as follows:
 
 ##Sceenshots
 
+
+## Summary Table: 
+| Project Name | Screenshot |
+|---|---|
+|Beanora|<img src="Cafe/Screenshot 1.jpg" width="120">|
+|Dice Game|<img src="Dice Game/">|
+|Fast Fingers||
+|Gym||
+|Movie Guess||
+|SocialMediaVisualizer||
