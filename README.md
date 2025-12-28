@@ -28,7 +28,7 @@ The features are as follows:
 | Project Name | Screenshot |
 |---|---|
 |Beanora|<img src="Cafe/Screenshot 1.jpg" width="120">|
-|Dice Game|<img src="Dice Game/">|
+|Dice Game|<img src="Dice Game/speedyStrokesHeroMonitor.jpg" width="120">|
 |Fast Fingers||
 |Gym||
 |Movie Guess||
