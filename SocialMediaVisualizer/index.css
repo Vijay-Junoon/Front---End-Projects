@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-color: #0f172a;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.hidden {
+  z-index: -1;
+  display: none !important;
+}
+
+.promptScreen {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: hsla(222, 47%, 11%, 0.2);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.prompt {
+  background-color: white;
+  width: 25rem;
+  height: 14rem;
+  padding: 2rem;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.prompt input {
+  width: 17rem;
+  height: 2rem;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid grey;
+  padding: 10px;
+}
+
+.sideBar {
+  width: 30%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.graphBar {
+  width: 70%;
+  position: relative;
+}
+
+.userProfile {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.userTag,
+.user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.username {
+  font-size: 20px;
+}
+
+.profileImage,
+.img {
+  width: 32px;
+  height: 32px;
+}
+
+.btns {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  height: 2.5rem;
+  width: 13rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: #0f172a;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 100;
+  transition: all 0.15s ease;
+}
+
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.15);
+  transform: scale(1.05);
+}
+
+.users {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.users .title {
+  font-size: 2rem;
+}
+
+.userList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.user12,
+.user34,
+.user56 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.user {
+  display: flex;
+  width: 7rem;
+  font-weight: 300;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.15s ease;
+}
+
+.user:hover {
+  font-weight: 500;
+
+  transform: scale(1.05);
+}
+
+#edges {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.node {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.node .name {
+  color: white;
+}
+
+.node.highlight {
+  transform: scale(1.15);
+  /* box-shadow: 0 0 20px rgba(96, 165, 250, 0.9); */
+}
+
+.alpha {
+  top: 30%;
+  left: 50%;
+}
+
+.beta {
+  top: 25%;
+  left: 25%;
+}
+
+.charlie {
+  top: 65%;
+  left: 17%;
+}
+
+.delta {
+  top: 80%;
+  left: 40%;
+}
+
+.echo {
+  top: 70%;
+  left: 70%;
+}
+
+.foxtrot {
+  top: 15%;
+  left: 75%;
+}
+
+.nodeImg svg {
+  width: 65px;
+  height: 65px;
+  transition: all 0.125s ease;
+}
+
+.nodeImg svg:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.nodeUser {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nodeUser p {
+  font-size: 1.6rem;
+  color: white;
+}
+
+.nodeUser {
+  top: 50%;
+  left: 55%;
+}
+
+/* .edge {
+  stroke: #64748b;
+  stroke-width: 2px;
+}
+
+.edge:hover {
+  stroke: white;
+  stroke-width: 4;
+} */
