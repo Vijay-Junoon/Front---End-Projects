@@ -1,0 +1,179 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.hidden {
+  z-index: -1;
+  visibility: hidden;
+  opacity: none;
+}
+
+.about-overlay {
+  z-index: 1;
+  opacity: 100%;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(95, 95, 95, 0.2);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutOverlayTitle {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.about {
+  z-index: 2;
+  border-radius: 10px;
+  background-color: white;
+  width: 20rem;
+  height: 31rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.aboutTitle {
+  text-align: left;
+  width: 18rem;
+  font-weight: 600;
+}
+
+.text {
+  font-size: 0.9rem;
+}
+
+.header {
+  width: 100%;
+  height: 5rem;
+  background-color: #c92a2a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.appTitle {
+  font-family: "BBH Hegarty", sans-serif;
+  font-size: 2rem;
+  color: #ffc9c9;
+}
+
+.passwordImg {
+  justify-self: center;
+  align-self: center;
+  width: 300px;
+  height: auto;
+  margin-bottom: 1.5rem;
+}
+
+.inputSection {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-self: center;
+}
+
+.inputSection p {
+  font-size: 0.85rem;
+  color: #495057;
+  font-weight: 450;
+}
+
+.inputPwd {
+  height: 3rem;
+  width: 14rem;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+  background-color: #ffdede;
+}
+
+.btn {
+  align-self: center;
+  margin: 1rem;
+  width: 8rem;
+  height: 2.75rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: #ff6b6b;
+  color: #e9ecef;
+  font-size: 1rem;
+}
+
+.card-holder {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-self: center;
+  gap: 1rem;
+  width: 19rem;
+  height: auto;
+  border-radius: 10px;
+  background-color: #ffc9c9;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.info {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+}
+
+.infoIcon {
+  fill: #ff6f6f;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffa8a8;
+  height: auto;
+  /* margin: 0.7rem; */
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+
+.statName {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  font-size: 1.2rem;
+  color: #c92a2a;
+  text-align: center;
+}
+
+.line {
+  height: 1px;
+  width: 14rem;
+  background-color: #ff6b6b;
+}
+
+.desc {
+  text-align: center;
+  margin-top: 0.6rem;
+  color: #e9ecef;
+}
