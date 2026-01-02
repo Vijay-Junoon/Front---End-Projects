@@ -21,6 +21,13 @@ In my 3rd year, I realized that there is nothing like the feeling of a good fron
 - Gym:
 <img src="Gym/coreFit-1.jpg">
 
+- Movie Guess:
+
+- Social Media Visualizer:
+
+- Am I any good?
+
+
 ---
 
 ## Summary Table: 
